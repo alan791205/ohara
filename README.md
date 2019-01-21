@@ -73,7 +73,7 @@ gradle clean build -PskipManager
 ```
 gradle clean ohara-it:test -PskipManager -Pbrokers="" -Pworkers=""
 ```
-all integration tests are currently live under the ohara-it. Without actual systems information, ohara-it use mini cluster 
+all integration tests are currently live under the ohara-it. Without actual system information, ohara-it use mini cluster 
 (embedded kafka, ftp server and database) to run all integration tests. All configured services and related "key" are shown below.
 * brokers: ohara.it.brokers
 * workers: ohara.it.workers
@@ -114,4 +114,4 @@ the uber jar is under ohara-assembly/build/libs/
 
 ### License
 
-Ohara is open source and available under the Apache 2.0 License.
+Ohara is an open source project and available under the Apache 2.0 License.
