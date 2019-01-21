@@ -1,6 +1,6 @@
 ## Ohara
 
-An easy use visual stream processing tool based on Apache Kafka.
+An easy-to-use visual stream processing tool based on Apache Kafka.
 
 ### Getting Started
 
@@ -73,7 +73,7 @@ gradle clean build -PskipManager
 ```
 gradle clean ohara-it:test -PskipManager -Pbrokers="" -Pworkers=""
 ```
-all integration tests currently live under the ohara-it. Without actual systems information, ohara-it use mini cluster 
+all integration tests are currently live under the ohara-it. Without actual systems information, ohara-it use mini cluster 
 (embedded kafka, ftp server and database) to run all integration tests. All configured services and related "key" are shown below.
 * brokers: ohara.it.brokers
 * workers: ohara.it.workers
