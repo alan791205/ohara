@@ -71,18 +71,6 @@ see the source code of ohara-it for more details.
 gradle clean build -PskipManager
 ```
 
-
-### Run IT against actual systems
-```
-gradle clean ohara-it:test -PskipManager -Pbrokers="" -Pworkers=""
-```
-all integration tests are currently live under the ohara-it. Without actual system information, ohara-it use mini cluster 
-(embedded kafka, ftp server and database) to run all integration tests. All configured services and related "key" are shown below.
-* brokers: ohara.it.brokers
-* workers: ohara.it.workers
-* ftp: ohara.it.ftp
-* db: ohara.it.db
-
 ### build uber jar
 ```
 gradle clean uberJar
