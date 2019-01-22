@@ -63,11 +63,14 @@ docker run --rm -p 5050:5050 oharastream/manager:0.2-SNAPSHOT --port 5050 --conf
 ```
 gradle clean test
 ```
+NOTED: Some tests in ohara-it require "specified" env. Otherwise, they will be skipped.
+see the source code of ohara-it for more details. 
 
 ### Building project without manager
 ```
 gradle clean build -PskipManager
 ```
+
 
 ### Run IT against actual systems
 ```
@@ -94,10 +97,6 @@ the uber jar is under ohara-assembly/build/libs/
 * [SLF4J](https://www.slf4j.org/) - LOG wrapper
 * [SCALALOGGING](https://github.com/typesafehub/scalalogging) - LOG wrapper
 * [LOG4J](https://logging.apache.org/log4j/2.x/) - log plugin default
-
-### Versioning
-
-[TODO]
 
 ### Authors
 
