@@ -429,7 +429,7 @@ The following information are tagged by ohara.
 ----------
 ### update a hdfs information
 
-*POST /v0/hdfs/${id}*
+*PUT /v0/hdfs/${id}*
 
 1. name (**string**) — name of this hdfs information.
 1. uri (**string**) — hdfs connection information. The form looks like "hdfs://namenode:9999/"
